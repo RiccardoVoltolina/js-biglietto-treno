@@ -53,7 +53,7 @@ const customerAge = Number (prompt ('Quanti anni hai?'));
 
 /* valore biglietto senza sconti */
 
-const noDiscountPrice = (numberKm * 0.21)
+const noDiscountPrice = (numberKm * 0.21).toFixed (2)
 
 console.log(noDiscountPrice);
 
@@ -61,11 +61,11 @@ console.log(noDiscountPrice);
 
 const discount_40 = (noDiscountPrice * 40 / 100 )
 
-const totalDiscount_40 = (noDiscountPrice - discount_40)
+const totalDiscount_40 = (noDiscountPrice - discount_40).toFixed (2)
 
 const discount_20 = (noDiscountPrice * 20 / 100 )
 
-const totalDiscount_20 = (noDiscountPrice - discount_20)
+const totalDiscount_20 = (noDiscountPrice - discount_20).toFixed (2)
 
 if (customerAge > 65) {
 
