@@ -57,6 +57,25 @@ const noDiscountPrice = (numberKm * 0.21)
 
 console.log(noDiscountPrice);
 
+/* determino se ha più di 65 anni o meno di 18 anni */
+
+const discount_40 = (noDiscountPrice * 40 / 100 )
+
+const totalDiscount_40 = (noDiscountPrice - discount_40)
+
+const discount_20 = (noDiscountPrice * 20 / 100 )
+
+const totalDiscount_20 = (noDiscountPrice - discount_20)
+
+if (customerAge > 65) {
+
+    console.log('complimenti, hai diritto a uno sconto del 40%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_40 + '$' );
+} else if (customerAge < 18) {
+    console.log('complimenti, hai diritto a uno sconto del 20%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_20 + '$' );
+} else {
+    console.log('Il prezzo finale del tuo biglietto è di ' + noDiscountPrice + '$');
+}
+
 
 
 
