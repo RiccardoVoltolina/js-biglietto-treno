@@ -46,7 +46,7 @@ L'output del prezzo finale va stampato in forma umana (ovvero con massimo due de
 
 const numberKm = Number (prompt ('Quanti km desideri percorrere?'));
 
-if (numberKm != Number) {
+if (isNaN (numberKm)) {
     alert('Scrivi gentilmente in caratteri numerici');
     location.reload();
 }
@@ -55,7 +55,7 @@ if (numberKm != Number) {
 
 const customerAge = Number (prompt ('Quanti anni hai?'));
 
-if (numberKm != Number) {
+if (isNaN (customerAge)) {
     alert('Scrivi gentilmente in caratteri numerici');
     location.reload();
 }
