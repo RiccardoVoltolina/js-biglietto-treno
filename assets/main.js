@@ -46,16 +46,18 @@ L'output del prezzo finale va stampato in forma umana (ovvero con massimo due de
 
 const numberKm = Number (prompt ('Quanti km desideri percorrere?'));
 
-if (numberKm.isNaN (Number)) {
+if (numberKm != Number) {
     alert('Scrivi gentilmente in caratteri numerici');
+    location.reload();
 }
 
 /* prompt età */
 
 const customerAge = Number (prompt ('Quanti anni hai?'));
 
-if (numberKm.isNaN (Number)) {
+if (numberKm != Number) {
     alert('Scrivi gentilmente in caratteri numerici');
+    location.reload();
 }
 
 
