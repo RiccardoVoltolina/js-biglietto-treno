@@ -84,6 +84,7 @@ if (customerAge > 65) {
 } else if (customerAge < 18) {
     console.log('complimenti, hai diritto a uno sconto del 20%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_20 + '$' );
     document.getElementById('discountUnder').innerHTML = 'Complimenti, hai diritto a uno sconto del 20%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_20 + '$'
+} else {
     console.log('Il prezzo finale del tuo biglietto è di ' + noDiscountPrice + '$');
     document.getElementById('noDiscount').innerHTML = 'Il prezzo finale del tuo biglietto è di ' + noDiscountPrice + '$'
 }
