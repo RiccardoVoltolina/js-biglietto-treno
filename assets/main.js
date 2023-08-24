@@ -80,11 +80,17 @@ const totalDiscount_20 = (noDiscountPrice - discount_20).toFixed (2)
 if (customerAge > 65) {
 
     console.log('complimenti, hai diritto a uno sconto del 40%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_40 + '$' );
+    document.getElementById('discountOver').innerHTML = 'Complimenti, hai diritto a uno sconto del 40%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_40 + '$' 
 } else if (customerAge < 18) {
     console.log('complimenti, hai diritto a uno sconto del 20%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_20 + '$' );
-} else {
+    document.getElementById('discountUnder').innerHTML = 'Complimenti, hai diritto a uno sconto del 20%. Il prezzo finale del tuo biglietto sarà di: ' + totalDiscount_20 + '$'
     console.log('Il prezzo finale del tuo biglietto è di ' + noDiscountPrice + '$');
+    document.getElementById('noDiscount').innerHTML = 'Il prezzo finale del tuo biglietto è di ' + noDiscountPrice + '$'
 }
+
+document.getElementById('km').innerHTML = 'Desideri percorrere ' + numberKm + 'Km'
+document.getElementById('Age').innerHTML = 'Hai una età di: ' + customerAge + ' anni'
+
 
 
 
